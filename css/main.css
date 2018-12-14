@@ -3,7 +3,6 @@
 body{
     font-family: 'Play', sans-serif;
     background-color: whitesmoke; /*whitesmoke;  #eee;  #4d0000 /* #660000;  #eee used for the top header coloring as margin-left exposes another */
-    /* font-family: 'Play', sans-serif; */ 
 }
 
 .fa{
@@ -12,7 +11,7 @@ body{
     padding: 4px;
 }
 
-.fa-facebook-square:hover{
+/*.fa-facebook-square:hover{
     color:  rgb(44, 44, 192);
 }
 
@@ -26,11 +25,11 @@ body{
 
 .fa-linkedin-square:hover{
     color: rgb(26, 26, 153);
-}
+}*/
 
-/*.fa:hover{
-    color:  #181818;    /* #4d0000; #495057; darkslategrey; #555
-} */
+.fa:hover{
+    color:  #181818;    /* #4d0000; #495057; darkslategrey; #555 */
+}
 
 .top-head h1{
     font-size: 80px;
@@ -160,14 +159,6 @@ header{
     color: #555;
 }
 
-/*#navlinks a:visited{
-    color: blue;
-}
-
-#navlinks a:active{
-    color: #ffffff;
-}*/
-
 #navlinks ul{
     list-style-type: none;
     padding: 1.5em;
@@ -176,7 +167,7 @@ header{
 } /* Watch this also controls the tabbed ULs down in Education!!! */
 
 #imdiv{
-    margin-top: 45%;
+    margin-top: 40%;
     padding-bottom: 4%;
     /*padding-bottom: 0;*/
 }
@@ -373,4 +364,15 @@ header{
 /* For mobile phones: */
 [class*="col-"] {
     width: 100%;
-  }
+}
+
+.container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid;
+    padding: 2em;
+    box-shadow: #4d0000 5px 10px;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
