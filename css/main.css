@@ -135,22 +135,6 @@ header{
     /* position: relative;  Not needed!?? */     
 }
 
-/* Check this for re-sizing the screen!! */
-/* @media screen and (max-width: 650px) {
-    #sidenav{
-        float: none;
-        display: block;
-        text-align: centre;
-        width: auto;
-        margin: 0;
-        padding: 14px;
-    }
-    /*.topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
-} 
-/* Re-sizing my site to a screen */
-
 #imdiv img{  
     max-width: 50%; /* I can make this full width if I want just watch the div it's in!! */
     /*height: 210px; /*control the img size here 210px normal for now*/ 
@@ -258,7 +242,6 @@ header{
 
 #projects{
     padding-top: 5%;
-    background-color: beige;
 }
 
 #projects a{
@@ -278,19 +261,11 @@ header{
     border: .5px solid #eee; 
 }
 
-#projects .fa-user-secret{
-    color: rgb(223, 139, 43);
-}
-
-#projects .fa-user-secret:hover{
-    color: wheat;
-}
-
-#projects .fa-database:hover{
+#projects .fa-database:hover, .fa-user-secret:hover{
     color: #eee;
 }
 
-#projects .fa-database{
+#projects .fa-database, .fa-user-secret{
     color: #181818;
 }
 
@@ -298,10 +273,17 @@ header{
     color: lightblue;
 }
 
+#projects .fa-desktop:hover{
+    color: #eee;
+}
+
 #enc:hover, #y2p:hover, #db:hover{
     background-color: #2B2B2B;
 }
 
+#enc, #y2p, #db{
+    background-color: beige;
+}
 #experience{
     padding-top: 5%;
     border-top: rgb(194, 186, 186) solid .4px;
