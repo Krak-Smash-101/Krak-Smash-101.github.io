@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IMD CA2</title>
+    <meta charset="utf-8">
+    <!--Ensures proper rendering and touch zooming
+        content seys the width of the screen to screen-device width!! 
+        initial scale sets zoom level when page is loaded-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link rel="stylesheet" href="css/bootstrap.min.css"-->
+    <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous"-->
+    
+    <!-- Bootstrap Linkage Etc.. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> <!--##Chk Modal## -->
+    <script src="js/bootstrap.min.js"></script><!--This one holds the Modal Control!!-->
+
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+
+
+    <!-- In-Site Styling -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Using Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous"-->
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script-->
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script-->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+    <!--gives full width to the screen..use container for fixed width
+        Containers are not nestable!!-->
+
+    <!--div class="row content" id="outer-row"-->    
+
+        <div class="row">
+
+            <div class="col-sm-3 col-md-3 col-sx-3 col-lg-3 pull-left position-fixed" id="sidenav"> 
+
+                <!--a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a-->
+                <!--testing respomsive-->                
+
+                <div id=imdiv>
+                    <a href="#content">
+						<img src="https://images.tophatter.com/86340408d5d7b6cd1e28cc0c6e2dd29e/large.jpg" class="img-responsive" alt="profile_pic">
+					</a>
+                </div>  
+                                
+                <div id="navlinks">
+                    <ul>
+                        <li class="active"><a href="#content">Profile</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#footer" target="_blank">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>                          
+            
+            </div>
+            <!--End SideNav-->
+
+            <div class="col-sm-9 col-md-9 col-sx-9 col-lg-9 pull-right" id="content"> 
+                
+                <header class="top-head">
+                    <br>
+                    <h1>Bren <span class="surname">Dempsey</span></h1>
+                    <h5>Software Engineer @ Workday Inc.</h5>
+                    <br>                       
+                    <!--p>Find Me on the Following SM Platforms</p-->                                       
+                    <div class="social">                         
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <i class="fa fa-linkedin-square" style="font-size: 49px;"></i> <!--style="font-size: 46px;"-->
+                        </a>                                               
+                        <a href="https://www.github.com/" target="_blank">
+                            <i class="fa fa-github" style="font-size: 49px;"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa fa-instagram" style="font-size: 49px;"></i>
+                        </a>                       
+                        <!--a href="https://www.twitter.com/" target="_blank">
+                            <i class="fa fa-twitter-square" style="font-size: 49px;"></i>
+                        </a-->
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook-square" style="font-size: 49px;"></i>
+                        </a> 
+                        <div class="search-container">
+                                <form class="form-inline" action="https://www.google.com/search" method="GET" target="_blank" onsubmit="googleSearch(this)">
+                                    <input name="q" type="hidden">
+                                    <input class="form-control mr-sm-2 searchField" name="qfront" type="search" , onfocus="this.value=''" required="" placeholder="Google Search">
+                                    <button class="btn btn-outline-secondary btn-md search-button" id="sbut" type="submit" target="_blank">Search</button>
+                                </form>                                
+                        </div>                                       
+                    </div>  
+                    <br><br>      
+                </header>
+
+                <section>                
+             
+                    <header>
+                        <h2>Profile</h2>                               
+
+                        <p>Industrious and ambitious person with a strong interest in IT. Currently undertaking a BSc in Computing 
+                           with Software Development where I am developing strong analytical & problem solving skills in particular 
+                           relation to Computer Software. My goal is to obtain a BSc with first class merits where I am already on 
+                           track for a 1:1 resulting grade. This trajectory has enabled me to successfully position myself in a 
+                           Software Development role within the IT Industry.
+                        </p>   						 
+
+                        <div id="welcomeButtons">
+                            <a href ="CV Bren Dempsey_2018.docx" download><button type="button" class="btn btn-outline-secondary btn-md">Download My CV</button></a>&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="btn btn-outline-secondary btn-md" data-toggle="modal" data-target="#myModal">Contact Me</button>
+                        </div>											
+                        <!--br><br><br><br><Find another way of doing this!!-->																 
+                    </header> 
+
+                <div id="education">
+
+                    <h2>Education<i class="fa fa-mortar-board" style="font-size:50px"></i></h2>        
+
+                    <div class="details">
+                        <h5>ITT Dublin [2015-Present]</h5>  
+                        <h6>B.Sc.(Hons) Computing - Software Stream</h6>  
+                        <p><strong>Current GPA: 3.25</strong></p>                           
+                    </div>                    
+                    
+                    <button class="btn btn-outline-secondary edbtn" data-toggle="collapse" data-target="#grades">Show/Hide Grades to Date</button>
+                    <div id="grades" class="collapse">
+                    <br>
+
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#yr4" data-toggle="tab">4th Year</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#yr3">3rd Year</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#yr2" data-toggle="tab">2nd Year</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#yr1" data-toggle="tab">1st Year</a>
+                            </li>
+                        </ul>
+        
+                        <div class="tab-content"><!--ITT-->
+
+                            <div class="tab-pane active" id="yr4">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>IMD</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EAD1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EPA</td>
+                                            <td>B+</td>
+                                        </tr>  
+                                        <tr class="tbold">
+                                            <td>GPA: [Expected]</td>
+                                            <td>3.56</td>
+                                        </tr>                                       
+                                    </tbody>
+                                </table>
+                            </div> 
+                            
+                            <div class="tab-pane fade" id="yr3">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Web</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C++</td>
+                                            <td>B</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ADB</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr class="tbold">
+                                            <td>GPA:</td>
+                                            <td>3.25</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tab-pane fade" id="yr2">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Java</td>
+                                            <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>OOAD</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr class="tbold">
+                                            <td>GPA:</td>
+                                            <td>3.63</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+ 
+                            <div class="tab-pane fade" id="yr1">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Web Dev One</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>OOSA</td>
+                                            <td>B</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maths</td>
+                                            <td>C</td>
+                                        </tr>
+                                        <tr class="tbold">
+                                            <td>GPA:</td>
+                                            <td>3.86</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!-- End ITT Tab Content -->
+                    </div><!-- End Show/Hide ITT Results -->  
+                    
+                    <button class="btn btn-outline-info rdbtn" data-toggle="collapse" data-target="#readITT">Read More...</button>
+                    <div id="readITT" class="collapse">
+                        <p>Infromation about the Degree Programme</p>
+                        <p>ITT Logo Etc...</p>
+                    </div>
+
+                    <br><br>
+
+                        <div class="details">
+                            <h5>Crumlin College of Further Education [2013-2015]</h5>  
+                            <h6>Computer Hardware/Software</h6>  
+                            <p><strong>Graduated: 14 Distinctions</strong></p>  
+                        </div> 
+                            
+                        <button class="btn btn-outline-secondary edbtn" data-toggle="collapse" data-target="#results">Show/Hide Results</button>
+                        <div id="results" class="collapse">
+                            <br>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#CT1" data-toggle="tab">Computer Technician CT1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#CP2">Computer Programming CP2</a>
+                                </li>
+                            </ul>
+                
+                            <div class="tab-content"><!-- Tab Content Crumlin-->
+        
+                                <div class="tab-pane active" id="CT1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th>Grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>IMD</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>EAD1</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>EPA</td>
+                                                <td>B+</td>
+                                            </tr>  
+                                            <tr class="tbold">
+                                                <td>Graduated:</td>
+                                                <td>6 Distinctions 1 Merit</td>
+                                            </tr>                                       
+                                        </tbody>
+                                    </table>
+                                </div> 
+                                    
+                                <div class=" collapse" id="CP2">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Subject</th>
+                                                <th>Grade</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Web</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>C++</td>
+                                                <td>B</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ADB</td>
+                                                <td>A</td>
+                                            </tr>
+                                            <tr class="tbold">
+                                                <td>Graduated:</td>
+                                                <td>7 Distinctions</td>
+                                            </tr> 
+                                        </tbody>
+                                    </table>
+                                </div>                            
+
+                            </div><!--End Crumlin Tab content-->
+                        </div><!-- End Show/Hide Results Crumlin-->
+
+                    <button class="btn btn-outline-info rdbtn" data-toggle="collapse" data-target="#readCCFE">Read More...</button>
+                    <div id="readCCFE" class="collapse">
+                        <p>Infromation about the PLC Programme</p>
+                        <p>CCFE Logo Etc...</p>
+                    </div>
+
+                </div><!-- End Education Div -->                
+
+
+                <div id="projects">  
+                    <h2>Projects</h2>
+                    <br>                  
+
+                    <div class="row"> 
+                        <div class="col-md-4" data-toggle="modal" data-target="#encProject" id ="enc">
+                        <a href="#modal">  
+                            <br>                  
+                            <h4>Encryption Project</h4>
+                            <br>
+                            <i class="fa fa-user-secret" style="font-size:150px"></i>
+                            <br><br></a>  
+                        </div>                                   
+                        <div class="col-md-4" data-toggle="modal" data-target="#yr2Project" id ="y2p">
+                            <a href="#modal">
+                            <br>                  
+                            <h4>2nd Year Project</h4>
+                            <br>                  
+                            <i class="fa fa-desktop" style="font-size:150px"></i>
+                            <br><br></a>              
+                        </div>
+                        <div class="col-md-4" data-toggle="modal" data-target="#dbProject" id ="db">
+                            <a href="#modal"> 
+                            <br>                  
+                            <h4>Database Project</h4>
+                            <br>
+                            <i class="fa fa-database" style="font-size:150px"></i> 
+                            <br><br></a>                              
+                        </div>
+                    </div> <!-- End Projects Row-->                
+
+                </div><!--End Projects -->   
+
+                <div id="experience">
+
+                        <h2>Experience</h2>
+                        <br>
+                        <div id="workday">
+                                <a href="https://www.workday.com/"><img src="img/workday2.png" class="img-responsive"   id="wday" alt="Workday-Logo"></a> 
+
+                                <div class="details">
+                                        <h5>Workday Inc. [Jan 2018-Aug 2018]</h5>  
+                                        <h6>Application Development Engineer</h6>
+                                        <p><strong>Work Placement (7-Months)</strong></p>  
+                                </div> 
+                                <br>
+                                <div class="w-txt">
+                                    <p>As part of Semester 6 of the degree was to gain valuable experience out in Industry I was very lucky to
+                                       have secured a role as Application Development Engineer in a Software Company called Workday. I spent
+                                       7-months as a member of a Software team working in an agile environment where my daily tasks 
+                                       contributed to Customer satisfaction code-delivery and the overall goal within the team.
+                                    </p>
+                                    <h6>Duties Included</h6> 
+                                    <ul>
+                                            <li>Working within a 2-week Sprint Timeframe</li>
+                                            <li>Being Agile in My Approach & Work Ethic</li>
+                                            <li>Working within a 2-week Sprint Timeframe</li>
+                                            <li>Working in a Team Environment</li>
+                                    </ul>                                    
+                                </div>                                 
+                        </div>
+
+                        <div id="camara">
+                            <a href="https://www.workday.com/" class="img-responsive" target="_blank"><img src="img/camara2.png" id="cam" alt="Camara-Logo"></a> 
+
+                            <div class="details">
+                                    <h5>Camara Education [Nov/Oct 2014]</h5>  
+                                    <h6>Hardware/Software Tecnician</h6>
+                                    <p><strong>Volunteer</strong></p>  
+                            </div> 
+                            <br>
+                            <div class="c-txt">
+                                <p>As part of Semester 6 of the degree was to gain valuable experience out in Industry I was very lucky to
+                                   have secured a role as Application Development Engineer in a Software Company called Workday. I spent
+                                   7-months as a member of a Software team working in an agile environment where my daily tasks 
+                                   contributed to Customer satisfaction code-delivery and the overall goal within the team.
+                                </p>
+                                <h6>Duties Included</h6>                                                                                                       
+                                <ul>
+                                        <li>Working within a 2-week Sprint Timeframe</li>
+                                        <li>Being Agile in My Approach & Work Ethic</li>
+                                        <li>Working within a 2-week Sprint Timeframe</li>
+                                        <li>Working in a Team Environment</li>
+                                </ul>                           
+                            </div>                                 
+                        </div><!-- End Camara Div -->
+                                                                     				
+                </div><!-- End Experience Div-->
+
+            </section>
+
+                <div id="footer">
+                    <h4><b>Contact Details</b></h4><br>
+
+                    <a href="mailto:brendempsey@gmail.com"><p><i class="fa fa-envelope" style="font-size:24px">
+                    </i>  brendempsey@gmail.com</p></a>
+                    <a href="https://www.linkedin.com/"><p><i class="fa fa-linkedin" style="font-size:24px">
+                    </i>   www.linkedin.com.brendempsey</p></a>  
+                    <p><i class="fa fa-phone" style="font-size:24px">
+                    </i>  087 (877) (7777)</p>              
+                    <p id="fp">&copyBren Dempsey 2018</p>
+                </div><!--End Footer-->   
+
+            </div>
+            <!--End Content Div-->        
+        </div>
+        <!--End Row Containing Sidenav & Content-->
+
+        <!--/div><End Row Content-- Watch out for this!!-->
+
+        <!-- Modals -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!--Modal content-->
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h6 class="modal-title">Fill in Your Details</h6>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">                        
+                        <form id="form">
+                            <div class="form-group">
+                                <label for="usr">Name:</label>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div> 
+                            <div class="form-group">
+                                    <label for="comment">Message:</label>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <div class="checkbox">
+                                 <label><input type="checkbox" name="remember"><span class="chk">Remember Me</span></label>
+                            </div>                            
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-secondary btn-md" onclick="thankYou().reset()" data-dismiss="modal">Submit</button>                                                             
+                        <button type="button" class="btn btn-outline-secondary btn-md" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div><!--End Contact Modal -->  
+
+        <div class="modal fade" id="dbProject" role="dialog">
+                <div class="modal-dialog">
+                    <!--Modal content-->
+                    <div class="modal-content">
+    
+                        <div class="modal-header">
+                            <h6 class="modal-title">Project Scope</h6>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+    
+                        <div class="modal-body">                        
+                            <form id="form">                                
+                                <div class="form-group">
+                                        <label for="comment">Message:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>                            
+                            </form>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger btn-md" data-dismiss="modal">Close</button>
+                        </div>
+    
+                    </div>
+                </div>
+        </div><!--End DB Modal --> 
+
+        <div class="modal fade" id="yr2Project" role="dialog">
+                <div class="modal-dialog">
+                    <!--Modal content-->
+                    <div class="modal-content">
+    
+                        <div class="modal-header">
+                            <h6 class="modal-title">Project Scope</h6>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+    
+                        <div class="modal-body">                        
+                            <form id="form">                                
+                                <div class="form-group">
+                                        <label for="comment">Message:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>                            
+                            </form>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger btn-md" data-dismiss="modal">Close</button>
+                        </div>
+    
+                    </div>
+                </div>
+        </div><!--End Yr.2 Project Modal --> 
+
+        <div class="modal fade" id="encProject" role="dialog">
+                <div class="modal-dialog">
+                    <!--Modal content-->
+                    <div class="modal-content">
+    
+                        <div class="modal-header">
+                            <h6 class="modal-title">Project Scope</h6>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+    
+                        <div class="modal-body">                        
+                            <form id="form">                                
+                                <div class="form-group">
+                                        <label for="comment">Message:</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>                            
+                            </form>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger btn-md" data-dismiss="modal">Close</button>
+                        </div>
+    
+                    </div>
+                </div>
+        </div><!--End Encryption Modal --> 
+        
+
+
+        <!--End Modal Content-->
+
+    </div>
+    <!--End Container-->
+    
+    <!--Place footer outside the container for fluid span across the page-->
+    <!--Pdiv id="footer">
+            <h4>Online CV</h4>
+            <p>Testing 2</p>
+            <p>Testing 2</p>
+            <br>
+            <p>First attempt at an Online CV</p>
+    </div--><!-- End Footer -->  
+
+</body>
+
+</html>
+
+<script src="./js/script.js">
+    //alert(message);
+</script>

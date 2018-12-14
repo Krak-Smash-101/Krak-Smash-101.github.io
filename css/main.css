@@ -1,0 +1,394 @@
+ /* I can have all my font set in here and target a seperate div with another (see sideNav)  */
+ /* See Google Fonts  */
+body{
+    font-family: 'Play', sans-serif;
+    background-color: whitesmoke; /*whitesmoke;  #eee;  #4d0000 /* #660000;  #eee used for the top header coloring as margin-left exposes another */
+    /* font-family: 'Play', sans-serif; */ 
+}
+
+.fa{
+    color: #4d0000;
+    /*color:   #495057;      /*#495057; #4d0000; darkslategrey; #555*/
+    padding: 4px;
+}
+
+.fa-facebook-square:hover{
+    color:  rgb(44, 44, 192);
+}
+
+.fa-instagram:hover{
+    color: purple;
+}
+
+.fa-github:hover{
+    color: #181818;
+}
+
+.fa-linkedin-square:hover{
+    color: rgb(26, 26, 153);
+}
+
+/*.fa:hover{
+    color:  #181818;    /* #4d0000; #495057; darkslategrey; #555
+} */
+
+.top-head h1{
+    font-size: 80px;
+    padding-left: 4px;
+    font-weight: bold;
+    letter-spacing: none;
+    /*color: grey; */
+}
+
+.top-head h5{
+    font-weight: bold;
+    padding: .5em;
+    font-size: 19px; /* if I want to control the font */
+}
+
+.surname{
+    color:  #4d0000; /* #3c5f90; #4d0000; #0d0d0d; */
+    font-weight: bolder;
+    /*padding-left: 10px; for letter spacing only */
+}
+
+.top-head{
+    background-color: #eee;  /* #4d0000;  #eee; */
+    border-bottom: rgb(194, 186, 186) solid .4px;
+    margin-bottom: 5%; 
+    /*text-align: center;
+    /*chk this for out of container header!! */
+    /*overflow: hidden;
+    margin-left: 25%;
+     margin-left: 23%; */
+    /*color: #0d0d0d; 
+    text-align: center; */ 
+}
+
+.social{
+    /*padding-right: 34%; /* needed to push the icons acrossthe div */
+    background-color: whitesmoke;
+}
+
+.search-container{
+    float: right;
+    margin-top: .7%;
+	margin-right: .5%;
+    /* Watch this for the positioning of the SM Icons.. 
+    Otherwise take off text-align center in tophead!! 
+    margin-left: -22%; */
+}
+
+#sbut{
+    height: 37px;
+    width: 78px;
+}
+
+.search-container.btn-md:hover{
+    background-color: #4d0000;    
+}
+
+/* Full control over the SM Icons now! */
+.top-head a{
+    padding-left: 7px;
+    text-decoration: none;
+}
+
+section h2{
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+section h5, h6{
+    font-weight: bold;
+    /*color: #000;*/
+}
+
+header{
+    margin-bottom: 10%;
+}
+
+/*.top-head.social a{
+    text-decoration: none;
+} Might need this for lining with search bar in social div!! */
+
+/* hide toggle button 
+#sidenav a.mobile-btn{ 
+    display: none; 
+} testing responsive */
+
+#sidenav{     
+    /*font-family: 'Play', sans-serif;
+    font-family: 'Glory Hallelujah', cursive; */
+    background-color: #2B2B2B;/* #4d0000;*/
+    /* #B0C4DE;  /*	#181818; /*  #2B2B2B; /* #4d0000;  #660000;  #800000;  * *** ***/
+    text-align: center; /* centres all text in sidenav */ 
+    /*padding: 0;*/ 
+    /* watch the following mess up my divs!! >>> Makes the navbar fixed * *** ***/
+    /*position: fixed; */
+    top: 0;
+    bottom: 0;
+    /*overflow-x: hidden; */
+
+    /*margin-top: 10%; /* push down the nav content */  
+    /* margin-left: auto;  /* watch this! */
+    /* position: relative;  Not needed!?? */     
+}
+
+/* Check this for re-sizing the screen!! */
+/* @media screen and (max-width: 650px) {
+    #sidenav{
+        float: none;
+        display: block;
+        text-align: centre;
+        width: auto;
+        margin: 0;
+        padding: 14px;
+    }
+    /*.topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+} 
+/* Re-sizing my site to a screen */
+
+#imdiv img{  
+    max-width: 50%; /* I can make this full width if I want just watch the div it's in!! */
+    /*height: 210px; /*control the img size here 210px normal for now*/ 
+    height: auto; 
+    border: solid 9px beige;   /*  #280000 ;#180000; ; /* #660000; */
+    opacity: 0.9;
+    border-radius: 200px; /* gives me circle frame */
+    /*padding: 1em;*/
+}
+
+#imdiv img:hover{
+    opacity: 0.6;
+    color: #4d0000;
+}
+
+#navlinks a{
+    /*color: wheat;*/
+    color: wheat;
+    text-decoration: none;
+}
+
+#navlinks a:hover{
+    color: #555;
+}
+
+/*#navlinks a:visited{
+    color: blue;
+}
+
+#navlinks a:active{
+    color: #ffffff;
+}*/
+
+#navlinks ul{
+    list-style-type: none;
+    padding: 1.5em;
+    line-height: 2.8em; /* gives me control over the link spacing */   
+    font-size: 18px; 
+} /* Watch this also controls the tabbed ULs down in Education!!! */
+
+#imdiv{
+    margin-top: 45%;
+    padding-bottom: 4%;
+    /*padding-bottom: 0;*/
+}
+
+#content{
+    background-color: whitesmoke;
+    padding: 1em;
+    text-align: justify;
+    margin-left: auto;  /* need it for fixed nav!! * *** ***/ 
+}
+
+#education{
+    padding-top: 5%;
+    border-top: rgb(194, 186, 186) solid .4px;
+    margin-bottom: 10%; 
+}
+
+#yr4, #yr3, #yr2, #yr1, #CT1, #CP2{
+    background-color: white;
+}
+
+.nav-tabs{
+    line-height: 1.5em;
+}
+
+.nav-tabs a{
+    color: #181818;
+    /*color: white;
+    font-weight: bold;*/
+}
+
+.nav-tabs a:hover{
+    color: white;
+}
+
+.edbtn{
+    color: white;
+    background-color: #181818;
+}
+
+.rdbtn:hover{
+    background-color: #181818;
+}
+
+.edbtn:hover{
+    background-color: #4d0000;
+}
+
+.nav-item{
+    /*background-color: #495057; */
+    background-color: #eee; /* #96897f;  /* 563f46;  /* #4d0000; */
+    border: solid #181818 1px;
+}
+
+.nav-item:hover{
+    background-color: #4d0000; 
+}
+
+.tbold{
+    font-weight: bolder;
+    color: black;
+}
+
+#projects{
+    padding-top: 5%;
+    background-color: beige;
+}
+
+#projects a{
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+#projects a:hover{
+    color: white;
+}
+
+.col-md-4{
+    height: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+    border: .5px solid #eee; 
+}
+
+#projects .fa-user-secret{
+    color: rgb(223, 139, 43);
+}
+
+#projects .fa-user-secret:hover{
+    color: wheat;
+}
+
+#projects .fa-database:hover{
+    color: #eee;
+}
+
+#projects .fa-database{
+    color: #181818;
+}
+
+#projects .fa-desktop{
+    color: lightblue;
+}
+
+#enc:hover, #y2p:hover, #db:hover{
+    background-color: #2B2B2B;
+}
+
+#experience{
+    padding-top: 5%;
+    border-top: rgb(194, 186, 186) solid .4px;
+    margin-bottom: 10%; 
+}
+
+#workday{
+    margin-bottom: 8%;
+}
+
+#wday{
+    float: left;
+    width: 15%;
+    /*margin-right: 20%;*/
+    margin-left: 20%;
+    padding: 1em;
+    margin-top: -6%;
+}
+
+#cam{
+    float: left;
+    width: 35%;
+    margin-top: -3%;
+}
+
+.w-txt ul, .c-txt ul{
+    margin-left: 35%;
+}
+
+.w-txt h6, .c-txt h6{
+    margin-left: 35%;
+}
+
+.details{
+    padding: 0;
+}
+
+#footer{
+    background-color: beige;/* #d9d9d9;  #555; */
+    border-top: rgb(194, 186, 186) solid .4px;
+    padding: 1.5em;
+    line-height: -1em;
+}
+
+#footer .fa{
+    color: #181818
+}
+
+#footer p{
+    text-align: justify;
+    font-size: 13px;
+    color: #181818;
+}
+
+/*** ----Modal Styling--- ***/
+
+#welcomeButtons{    
+    display: table;
+    margin-left: auto;
+    margin-right: .5%;
+}
+
+/* I can control all my button colors/hover/texts etc. in here */
+.btn-md:hover{ 
+    background-color: #4d0000; /*It's this or default (Grey) */
+}
+
+.btn-secondary{
+    background-color: #4d0000;
+}
+
+/*** ----End Modal Styling--- */
+
+
+/*** ----Contact Form Styling--- ***/
+
+.checkbox{
+    padding-left: 2px;
+}
+
+.chk{    
+    padding-left: .4em; /* control the label spacing */
+}
+
+/*** ----End Contact Form Styling--- */
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
