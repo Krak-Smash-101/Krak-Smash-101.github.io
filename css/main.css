@@ -233,6 +233,7 @@ header{
 
 #projects{
     padding-top: 5%;
+    border-top: rgb(194, 186, 186) solid .4px;
 }
 
 #projects a{
@@ -261,7 +262,7 @@ header{
 }
 
 #projects .fa-desktop{
-    color: lightblue;
+    color:  #B0C4DE;/* lightblue; */
 }
 
 #projects .fa-desktop:hover{
@@ -315,18 +316,31 @@ header{
 #footer{
     background-color: beige;/* #d9d9d9;  #555; */
     border-top: rgb(194, 186, 186) solid .4px;
-    padding: 1.5em;
-    line-height: -1em;
+    padding-top: 7%;
+    text-align: justify;
+    padding-left: 3%;
+}
+
+#footer a{
+    color: #181818;
+    font-weight: bold;
+}
+
+#footer h2{
+    padding-bottom: 40px;
 }
 
 #footer .fa{
-    color: #181818
+    color: #181818;
 }
 
 #footer p{
-    text-align: justify;
     font-size: 13px;
     color: #181818;
+}
+
+#fp{
+    text-align: center;
 }
 
 /*** ----Modal Styling--- ***/
